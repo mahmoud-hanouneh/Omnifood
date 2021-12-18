@@ -1,0 +1,628 @@
+/* --------------------------------------- */ 
+/*-------------- BASIC SETUPS -----------  */
+/* --------------------------------------- */ 
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+/* --------------------------------------- */ 
+/*-------------REUSABLE COMPONENT--------  */
+/* --------------------------------------- */
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+
+section {
+	padding: 80px 0;
+}
+
+
+
+.box {
+	padding: 1%;
+}
+/* --------------------------------------- */ 
+/*--------------HEADINGS ----------------- */
+/* --------------------------------------- */ 
+
+h1,
+h2,
+h3 {
+
+	text-transform: uppercase;
+	font-weight: 300;
+
+}
+
+
+h1 {
+	
+	letter-spacing: 1px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 3px;
+}
+
+
+h2 {
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+h2:after {
+	display: block;
+	width: 100px;
+	height: 2px;
+	background-color: #cf6d17;
+	content: " ";
+	margin: 0 auto;
+	margin-top: 30px;
+
+}
+
+
+/* --------------------------------------- */ 
+/* ------------------- HEADER ------------ */
+/* --------------------------------------- */ 
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/hero-min.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+
+}
+
+
+.hero-text-box {
+	/*border: 1px solid ;*/
+	width: 1140px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo {
+	width: auto;
+	height: 100px;
+	float: left;
+	margin-top: 20px;
+
+}
+
+.logo-black { 
+	display: none;
+	width: auto;
+	height: 50px;
+	float: left;
+	margin: 5px 0;
+}
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline;
+	margin-left: 40px ;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #e67e22;
+}
+
+
+
+/*Sticky Nav*/
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.98);
+	box-shadow: 0 2px 2px #f0f0f0;
+	z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	padding: 16px 0;
+	color: #555;
+	
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+
+.sticky .main-nav {
+
+	margin-top: 18px;
+}
+/* --------------------------------------- */ 
+/* -------------PARAGRAPHS---------------  */
+/* --------------------------------------- */ 
+.long-copy {
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+	line-height: 145%;
+}
+
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+}
+
+/* --------------------------------------- */ 
+/* ----------------ICONS-----------------  */
+/* --------------------------------------- */ 
+.icon-big {
+	font-size: 400%;
+	display: block;
+	color: #cf6d17;
+	margin-bottom: 10px;
+}
+
+
+.icon-small {
+    display: inline-block;
+    color: #e67e22;
+    width: 30px;
+    font-size: 120%;
+    text-align: center;
+    /* secrets to align text with icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
+/* --------------------------------------- */ 
+/* ----------------LINKS------------------ */
+/* --------------------------------------- */ 
+
+a:link,
+a:visited {
+    color: #e67e22;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    text-decoration: none;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover {
+    color: #555;
+    border-bottom: 1px solid transparent;
+
+}
+/* --------------------------------------- */ 
+/* ----------------BUTTONS---------------- */
+/* --------------------------------------- */ 
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+
+.btn-full:link,
+.brn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+ 
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+	border: 1px solid #e67e22;
+	color: #fff;
+    margin-right: 15px;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+	background-color: #cf6d17;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+/* --------------------------------------- */ 
+/* -------------Feautres Section---------  */
+/* --------------------------------------- */ 
+
+.section-features .long-copy {
+	margin-bottom: 40px;
+}
+
+
+
+
+/* --------------------------------------- */ 
+/* -------------Meals Section------------  */
+/* --------------------------------------- */ 
+.section-meals {
+	padding: 0;
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: block;
+	width: 25%;
+	float: left;
+
+}
+
+.meal-photo {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #000;
+
+}
+
+.meal-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s ;
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(1.03);
+}
+
+
+/* --------------------------------------- */ 
+/* ---------How it Works - Steps --------  */
+/* --------------------------------------- */ 
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+
+.works-step:last-of-type {
+	margin-bottom: 80px;
+}
+
+
+.works-step {
+	margin-bottom: 50px;
+}
+
+.steps-box {
+	margin-top: 30px;
+}
+
+.steps-box:first-child {
+	text-align: right;
+	padding-right: 3%;
+
+}
+
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+
+}
+
+.app-screen {
+	width: 40%;
+}
+
+
+
+
+.works-step div { 				/* Circules  */
+	border:solid 2px #e67e22;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	font-size: 150%;
+	margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+	width: auto;
+	height: 50px;
+	margin-right: 10px;
+}
+
+
+
+/** ------------------------------------- **/
+/* ------------------CITIES----------------*/
+/** ------------------------------------- **/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+/* --------------------------------------- */ 
+/* --------- TESTIMONIALS ---------------  */
+/* --------------------------------------- */
+
+.section-testimonials {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/back-customers-min.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+
+}
+
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	position: relative;
+	margin-top: 40px;
+
+}
+
+blockquote:before {
+	content:"\201C";
+	font-size: 500%;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: -5px;
+}
+cite {
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+cite img {
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+
+}
+
+/* --------------------------------------- */ 
+/* --------- PRICING --------------------  */
+/* --------------------------------------- */
+
+.section-plans {
+	background-color: #f4f4f4;
+}
+
+.plan-box {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+	box-shadow: 0 2px 2px #efefef;
+}
+.plan-box  div {
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box  div:first-child {
+	background-color: #fcfcfc;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.plan-box  div:last-child {
+	border: 0;
+	text-align: center;
+}
+
+
+.plan-price {
+	font-size: 300%;
+	margin-bottom: 10px;
+	color: #e67e22;
+	font-weight: 100;
+}
+.plan-price span {
+	font-size: 30%;
+	font-weight: 300;
+}
+
+.plan-price-meal {
+	font-size: 80%;
+}
+
+.plan-box ul {
+	list-style: none;
+}
+
+.plan-box ul li {
+	padding: 5px 0;
+}
+
+/* --------------------------------------- */ 
+/* --------- Form -----------------------  */
+/* --------------------------------------- */
+
+
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type=checkbox] {
+	margin: 10px 5px 10px 0;
+}
+
+
+
+/*Footer*/
+footer {
+	background-color: #333;
+	padding: 50px;
+	font-size: 80%;
+}
+
+.footer-nav {
+	float: left;
+	
+	list-style: none;
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+}
+
+.footer-nav li,
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+	margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+	text-decoration: none;
+	border: 0;
+	color: #888;
+	transition: color 0.2s;
+}
+
+
+
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+	color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:active {
+	font-size: 160%;
+}
+
+footer p {
+	color: #888;
+	text-align: center;
+	font-size: 90%;
+	margin-top: 30px;
+
+}

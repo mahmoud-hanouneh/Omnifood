@@ -1,0 +1,53 @@
+# OMNIFOOD - Fictional restaurant landing page
+
+This is a simple website made during Jonas Schmedtmann on Udemy 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+
+
+## Overview
+
+
+### Screenshot
+
+![screenshor #one](screenshots/screenshot-1.png)
+![screenshot #two](screenshots/screenshot-2.png)
+![screenshot #three](screenshots/screenshot-3.png)
+
+
+
+### Links
+
+- Live Site URL: ()
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Responsive Grid System
+- responsiveness with Media Queries
+- Waypoints jQuery
+
+### Useful resources 
+
+- [Waypoints iQuery](https://medium.com/@aniapienio/easy-waypoints-just-add-jquery-21e423068867)
+- [Responsive Grid System](http://www.responsivegridsystem.com/)
+
+## Author
+
+Mahmoud Hanouneh, I am a telecommunication engineer with a passion for learning web develop.
+
+- LinkedIn - [Mahmoud Hanouneh](https://www.linkedin.com/in/mahmoud-hanouneh/)
+
+
