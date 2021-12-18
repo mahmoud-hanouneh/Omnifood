@@ -27,7 +27,7 @@ This is a simple website made during Jonas Schmedtmann on Udemy
 
 ### Links
 
-- Live Site URL: ()
+- Live Site URL: (https://omnifood-mu.vercel.app/)
 
 ## My process
 
