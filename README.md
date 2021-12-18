@@ -19,9 +19,9 @@ This is a simple website made during Jonas Schmedtmann on Udemy
 
 ### Screenshot
 
-![screenshor #one](screenshots/screenshot-1.png)
-![screenshot #two](screenshots/screenshot-2.png)
-![screenshot #three](screenshots/screenshot-3.png)
+![screenshor #one](screenshots/screenshot-1.PNG)
+![screenshot #two](screenshots/screenshot-2.PNG)
+![screenshot #three](screenshots/screenshot-3.PNG)
 
 
 
