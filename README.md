@@ -1,6 +1,6 @@
 # OMNIFOOD - Fictional restaurant landing page
 
-This is a simple website made during Jonas Schmedtmann on Udemy 
+This is a simple website (Landing Page) for a fictional restaurant created for educational purposes.
 
 ## Table of contents
 
